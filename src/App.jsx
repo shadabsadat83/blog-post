@@ -1,16 +1,13 @@
-import { useState } from "react";
+import Header from "./components/section/Header";
+import Footer from "./components/section/Footer";
 
 function App() {
-  const [likes, setLikes] = useState(0);
-
   return (
-    <div>
-      <p>❤️ Likes: {likes}</p>
+    <>
+      <Header />
 
-      <button onClick={() => setLikes(likes + 1)}>
-        Like ❤️
-      </button>
-    </div>
+      <Footer />
+    </>
   );
 }
 
